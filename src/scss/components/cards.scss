@@ -1,0 +1,108 @@
+
+
+.new-cards{
+	text-align: center;
+	padding: 29% 18px 130px;
+	&__title{
+		color: beige;
+		font-size: 36px;
+    	padding-right: 83%;
+		font-family: Montserrat;
+		&__after{
+			content: '';
+			position: absolute;
+			width: 250px;
+			height: 51px;
+			bottom: 0;
+			right: 0;
+			margin: 0 auto;
+			background: #171717;
+
+		}
+		&__text{
+			max-width: 730px;
+			margin: 0 auto 30px;
+		}
+	}
+
+	.cards{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+		grid-gap: 30px;
+		padding: 10px;
+		
+		&__item{
+			position: relative;
+			text-decoration: none;
+		}
+		&__images{
+			max-height: 136px;
+			object-fit: cover;
+
+		}
+		&__info{
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			color: #171717;
+			background: #FFFFFF;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&__info-title{
+			font-size: 20px;
+			line-height: 25px;
+			color: title;
+			padding-bottom: 19px;
+			margin-bottom: 19px;
+			position: relative;
+			&::after{
+				content: '';
+				bottom: 0;
+				position: absolute;
+				height: 1px;
+				background: black;
+				width: 200px;
+			}
+			&__cards__images {
+				text-decoration: none;
+				color: white;
+				border-radius: .25rem;
+				text-align: center;
+				display: inline-block;
+				transition: all .3s;
+			  }
+			  
+			  a:hover {
+				opacity: .6;
+			  }
+			  
+			  /* Styles for the hero image */
+			  .cards {
+				background-size: cover;
+				padding: 4rem 2rem;
+				/* grid styles */
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+				align-items: center;
+			  }
+			  .cards > h1 {
+				font-size: 4rem;
+				padding-bottom: 1rem;
+			  }
+			  
+			  .cards > p {
+				font-size: 1.5rem;
+				font-weight: 200;
+			  }
+			  .cards > ul {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				grid-gap: 1rem;
+			  }
+			  
+		  }
+	 }
+}

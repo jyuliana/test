@@ -1,0 +1,202 @@
+<!Doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<title>Getting Started</title>
+	<link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo"> <img src="images/Group 1630.png" alt=""> <img src="images/magwai.png" alt=""> </div>
+		<nav role="navigation" id="nav"> <input class="trigger" type="checkbox" id="mainNavButton"> <label
+				for="mainNavButton" onclick></label>
+			<ul>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Абонементы</a>
+				<li><a href="#">Почему мы</a></li>
+				<li><a href="#">Оборудование</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			</ul>
+			<div class="icon_button"> <img src="images/Group 39.svg" alt=""> </div>
+		</nav>
+	</header>
+	<main class="main">
+		<div class="slider">
+			<div class="form-popup" id="myForm">
+				<form action="#" class="form-container">
+					<h2>Оставить заявку</h2> <label for="name"><b>Ваше имя</b></label> <input type="text"
+						placeholder="Ваше имя" name="name" required> <label for="email"><b>Е-MAIL</b></label> <input
+						type="text" placeholder="Ваш е-мейл" name="email" required> <label
+						for="+7(___)"><b>+7(___)</b></label> <input type="text" placeholder="Ваш телефон" name="+7(___)"
+						required> <label for="Ваш вопрос"><b>Ваш вопрос*</b></label> <input type="text"
+						placeholder="Ваш вопрос" name="email" required> <button type="submit" class="btn">Оставить
+						заявку</button>
+					<h4>Нажимая на кнопку “Оставить заявку” вы соглашаетесь с “Пользовательским соглашением”
+						<h4p>
+				</form>
+			</div>
+			<div class="item"> <img src="images/Rectangle 5-4.png" alt="">
+				<div class="slideText">
+					<h3>Полет Илона Маска<br> и DOGIE COIN</br>
+					</h3>
+					<p>В прошлый четверг все офигели от полета DOGIE COIN на марс.</p>
+				</div>
+			</div>
+			<div class="item"> <img src="images/Rectangle 5-2.png" alt="">
+				<div class="slideText">
+					<h3>Эпическое возвращения<br>на хаи</br>
+					</h3>
+					<p>Все в шоке, я снова богат</p>
+				</div>
+			</div>
+			<div class="item"> <img src="images/Rectangle 5-3.png" alt="">
+				<div class="slideText">
+					<h3>DOGIE COIN<br>УПАЛ</br>
+					</h3>
+					<p>Все в шоке, я потерял все деньги</p>
+				</div>
+			</div> <a class="prev" onclick="minusSlide()">&#10094;</a> <a class="next" id='nextSlide'>&#10095;</a>
+		</div> <button class="button" onclick="openForm()">Оставьте заявку</button> </div>
+		</div>
+	</main>
+	<section class="new-cards">
+		<div class="container-fluid">
+			<h2 class="new-cards__title"> Карточки </h2>
+			<div class="cards">
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap.jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap (1).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap (2).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap(3).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap(4).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="cards">
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap(5).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap(6).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap (7).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap(8).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+				<a class="cards__item" href="#">
+					<div class="cards__info"> <img class="cards__images" src="images/cards/Bitmap (9).jpg" alt="">
+						<h3 class="cards_info-title"> bridge<br> How to increase your productivity with a Music</br>
+						</h3>
+						<p class="cards__info-text"> <br>Sed ut perspiciatis unde omnis iste natus <br> error sit
+							voluptatem santium doloremque</br> laudantium, totam rem sed ut perspiciatis unde omnis
+							<br>iste natus error sit voluptatem accusantium dolo</br> <br>Posted by Eugenia, on July 24,
+							2019</br>
+						</p> <button onclick="location.href='/your_path/'">Continue reading</button>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="button-image"> <a href="/" class="button">оставить заявку</a> </div>
+	</footer>
+	<script src="dist/bundle.js"></script>
+</body>
+
+</html>

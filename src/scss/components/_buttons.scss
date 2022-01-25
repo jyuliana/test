@@ -1,0 +1,89 @@
+$var1: #ffffff;
+$var2: #00B98B;
+
+.button {
+    display: inline-block;
+    padding: 0 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    line-height: 60px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #C2AB81;
+    position: relative;
+    left: 9%;
+}
+
+
+$var1: #C2AB81;
+
+.button:before {
+	content: '';
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-bottom: 60px solid $var1;
+	position: absolute;
+	top: 0;
+	left: -30px;
+}
+.button:after {
+	content: '';
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0;
+	border-right: 30px solid transparent;
+	border-top: 60px solid $var1;
+	position: absolute;
+	top: 0;
+	right: -30px;
+}
+
+.buttons{
+	position: relative;
+    left: 0.5%;
+}
+
+button{
+    padding: 6%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    background: #171717;
+    color: #FFFFFF;
+}
+
+
+.btn-nav {
+	display: inline-block;
+	border: 1px solid;
+	width: 160px;
+	height: 45px;
+	background-color: red;
+	border-radius: 5px;
+  text-align: center;
+	font-size: 0.9em;
+	color: #ffffff;
+  line-height:45px;
+}
+
+.icon_button {
+	position: absolute;
+    left: 127.75%;
+    right: 18.75%;
+    top: 18.75%;
+    bottom: 18.75%;
+}
+
+@media only screen and (max-width: 767px){
+    .button {
+            display: none;
+    }
+    }
