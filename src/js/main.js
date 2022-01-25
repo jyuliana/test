@@ -4,12 +4,13 @@
   var slideIndex = 1;
   showSlides(slideIndex);
   
-  document.getElementById("nextSlide").addEventListener("click", plusSlide);
+  document.getElementById("slideIndex").addEventListener("click", plusSlide);
   /* Функция увеличивает индекс на 1, показывает следующй слайд*/
   function plusSlide() {
       showSlides(slideIndex += 1);
   }
   
+  document.getElementById("slideIndex").addEventListener("click", minusSlide);
   /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
   function minusSlide() {
       showSlides(slideIndex -= 1);  
@@ -23,9 +24,9 @@
   /* Основная функция слайдера */
   function showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName("item");
-      var dots = document.getElementsByClassName("slider");
-      console.log(dots);
+      var slides = document.getElementById("slideIndex").addEventListener("click", plusSlide);
+      var slides =  document.getElementById("slideIndex").addEventListener("click", minusSlide);
+      console.log(slides);
       if (n > slides.length) {
         slideIndex = 1
       }
@@ -35,11 +36,11 @@
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
       }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].className = slides[i].className.replace(" active", "");
       }
       slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
+      slides[slideIndex - 1].className += " active";
   }
   
   
